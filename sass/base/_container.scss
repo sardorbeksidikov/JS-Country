@@ -1,0 +1,11 @@
+@mixin container($width: 1440, $padding: 115, $mobilePadding: 20) {
+  width: 100%;
+  max-width: calc($width - 2 * $padding + 2 * $mobilePadding) + px;
+  margin: 0 auto;
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+}
+
+.container {
+  @include container;
+}

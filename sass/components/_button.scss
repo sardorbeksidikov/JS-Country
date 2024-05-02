@@ -1,0 +1,25 @@
+@mixin btn(
+  $padding: 14px 32px 14px 42px,
+  $bgColor: $btn-primary,
+  $br: 9px,
+  $color: $text-white,
+  $fontSize: 16px
+) {
+  padding: $padding;
+  background: $bgColor;
+  color: $color;
+  font-size: $fontSize;
+  border-radius: $br;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  border: 3px solid $bg-primary;
+}
+
+.btn {
+  @include btn;
+  transition: all 0.9s;
+  &:hover {
+    background: transparent;
+    color: $bg-primary;
+  }
+}

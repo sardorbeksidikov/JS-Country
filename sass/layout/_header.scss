@@ -1,0 +1,50 @@
+.header {
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+  padding-inline: 24px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 80px;
+    margin-inline: auto;
+  }
+}
+
+.nav {
+  position: sticky;
+  height: 1em;
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 425px) {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
+header {
+  // background-color: #fff;
+  box-shadow: 3px 3px 20px 15px rgba(248, 237, 237, 0.4);
+}
+.dark-box {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+  }
+  #dark-mode {
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    // background: url("../../assets/images/dark-mode.svg") no-repeat;
+    background-position: 5px;
+  }
+}

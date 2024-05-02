@@ -1,0 +1,12 @@
+@mixin dflex(
+  $content: space-between,
+  $items: center,
+  $direction: row,
+  $gap: 10px
+) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  flex-direction: $direction;
+  gap: $gap;
+}

@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  padding: 25px;
+}
+
+:root {
+  --background-color: hsl(207, 26%, 17%);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#mode-btn {
+  padding: 10px;
+  border-radius: 5px;
+  width: 50px;
+  background-color: rgb(149, 177, 200);
+}
+
+.dark.body {
+  background-color: #0d131f;
+  * {
+    color: white;
+  }
+}
+// lading/////
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
